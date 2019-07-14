@@ -1,0 +1,12 @@
+<?php
+    define("DB_SERVER","localhost");
+    define("DB_USERNAME","shash222_sal");
+    define("DB_PASSWORD","HostGatorislife1!@");
+    define("DB_DATABASE","shash222_Anas-Anoshia-Wedding");
+    if(!mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD)){
+        echo"Failure";
+    }
+    else{
+        echo"Success!";
+    }
+?>

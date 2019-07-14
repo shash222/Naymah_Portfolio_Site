@@ -1,0 +1,429 @@
+	/*General styling*/
+	a:link{
+		text-decoration:none;
+		color:inherit;
+	}
+
+	a:visited{
+		color:inherit;
+	}
+
+	a:hover {/* mouse over link */
+		font-weight:bold;
+	}
+
+	a:active {/* selected link */
+		color: inherit;
+	}
+	
+	@keyframes titleTranslationOut{
+	    from{margin-left:0;}
+	    to{margin-left:208px;}
+	}
+	
+	@keyframes descriptionTranslationOut{
+	    from{margin-left:0;}
+	    to{margin-left:208px;}
+	}
+
+	@keyframes titleTranslationIn{
+	    from{margin-left:208px;}
+	    to{margin-left:0;}
+	}
+	
+	@keyframes descriptionTranslationIn{
+	    from{margin-left:208px;}
+	    to{margin-left:0;}
+	}
+
+	article .title{
+	    animation-name:titleTranslationIn;
+	    animation-duration:.28s;
+	    animation-fill-mode:forwards;
+	}
+
+	article .description{
+	    animation-name:descriptionTranslationIn;
+	    animation-duration:.28s;
+	    animation-fill-mode:forwards;
+	}
+
+	article:hover .title{
+	    animation-name:titleTranslationOut;
+	    animation-duration:.28s;
+	    animation-fill-mode:forwards;
+	}
+
+	article:hover .description{
+	    animation-name:descriptionTranslationOut;
+	    animation-duration:.28s;
+	    animation-fill-mode:forwards;
+	}
+
+	body{
+		font-family: "Segoe UI", "Segoe UI", Calibri, sans-serif;
+		margin:0;
+	}
+
+	nav{
+		position:absolute;
+		text-align:center;
+		list-style-type:none;
+		font-size:20px;
+		margin:0;
+		padding:0;
+		width:100%;
+		bottom:0;
+	}
+
+	html{
+		overflow-y:scroll;
+	}
+
+	header{
+		position:fixed;
+		width:100%;
+		background-color:white;
+		z-index:5;
+		box-shadow:0 6px 15px #d2d2d2;
+		margin:0;
+		height:30%;
+	}
+	
+	.navLinks{
+		width:24.8%;
+		float:left;
+		color:#E19771;
+	}
+
+	#container{
+		position:absolute;
+		margin-top:15%;
+		width:60%;
+		margin-bottom:50px;
+		max-width:1200px;
+		left:50%;
+		transform:translateX(-50%);
+	}
+
+	#image{ /*Naymah image*/
+		position:absolute;
+		right:75%;
+		top:20%;
+		height:50%;
+		z-index:3;
+	}
+
+	#name{
+		position:absolute;
+		bottom:27%;
+		right:20%;
+		width:40%;
+		top:15px;
+		text-align:center;
+		z-index:3;
+	}
+
+	#rotatingblockhome{
+		position:relative;
+		top:300px;
+	}
+
+	#selected{
+		color:#6eb4a4;
+		cursor: text;
+		font-weight: bold;
+	}
+
+	/*index.html*/
+
+	.slideshowDescriptions{
+		margin-top:0;
+	}
+
+	.slides{
+		width:100%;
+		height:100%;
+	}
+
+	.slideshowTitles{
+		font-size:20px;
+		font-weight:bold;
+		margin-bottom:0;
+	}
+
+	#slideshow{
+		position:relative;
+		width:100%;
+		height:40%;
+		margin:5% auto 0 auto;
+	}
+
+	#slideshowText{
+		padding-top:0;
+	}
+	
+	
+
+
+	/*resume1.html*/
+
+	h2{
+		color:#DF7F5F;
+	}
+
+	
+    
+	.language{
+		color:black;
+		width:100px;
+	}
+
+	.languagecapability{
+		color:rgba(173, 174, 94,1);
+	}
+
+	.languagelevel{
+		text-align:center;
+		display:table-cell;
+		padding:2px;
+		width:50px;
+	}
+
+	.languageskills{
+		display:table;
+		table-layout:fixed;
+		color:rgba(173, 174, 94,.3);
+	}
+
+	.location{
+	}
+
+    #download{
+        color:blue;
+    }
+
+	#resumeleft{
+	    width:40%;
+	}
+
+	#resumeright{
+	    margin-left:20%;
+	    width:40%;
+	}
+
+	.software{
+		width:200px;
+		background-color:white;
+	}
+
+	.softwarelevel{
+		display:table-cell;
+		width:10px;
+		height:10px;
+		border:5px solid white;
+		background-color:rgba(173, 174, 94,.3);
+	}
+
+	.softwarecapability{
+		background-color:rgba(173, 174, 94,1);
+	}
+
+	.softwareskills{
+		display:table;
+	}
+
+	.tablerow{
+		display:table-row;
+	}
+
+
+	/*portfolio.html*/
+
+	p{
+		font-weight:normal;
+	}
+
+	.description{
+		padding-top:15px;
+		color:white;
+		height:286px;
+		width:25%;
+		font-size:17px;
+		text-align:center;
+		vertical-align:auto;
+		position:absolute;
+		transform:translateX(-100%);
+		z-index:1;
+	}
+     
+    .interiorDescription{
+	    background-color:rgba(168,210,200,.8);
+	}
+	
+    .commercialDescription{
+	    background-color:rgba(194, 211, 156, 0.8);
+    }
+    
+    .residentialDescription{
+	    background-color:rgba(225,151,113,.8);
+	}
+	
+    .urbanDescription{
+	    background-color:rgba(233,158,158,.8);
+    }
+
+	.portfolioImage{
+		display:block;
+		border:1px solid black;
+		width:100%;
+		height:300px;
+		opacity:.85;
+		margin:0;
+	}
+
+	.title{
+		color:white;
+		position:absolute;
+		font-size:40px;
+		width:300px;
+		text-align:center;
+		z-index:1;
+		margin:0;
+		animation-name:transition;
+		animation-duration:2s;
+	}
+
+	.title p{
+		margin:0;
+	}
+
+	.interior{
+		color:#6eb4a4;
+	}
+
+	.commercial{
+		color:#aaad57;
+	}
+
+	.progLinks{
+		float:left;
+		width:25%;
+		font-size:20px;
+		position:relative;
+	}
+
+	.residential{
+		color:#de7f58;
+	}
+
+	.urban{
+		color:#da5e5e;
+	}
+
+	#interiorContainer{
+	    background-color:rgb(139,195,182);
+	}
+
+	#commercialContainer{
+	    background-color:rgb(187,189,121);
+	}
+
+	#hideText{
+		position:absolute;
+		height:100%;
+		width:25%;
+		z-index:2;
+		background-color:white;
+		left:-25%;
+	}
+
+	#residentialContainer{
+	    background-color:rgb(229,153,121);
+	}
+
+	#urbanContainer{
+	    background-color:rgb(225,126,126);
+	}
+
+
+	#separation{
+		height:100px;
+	}
+
+	#interior{
+		font-size:36px;
+	}
+	
+	#commercial{
+		font-size:36px;
+	}
+
+	#residential{
+		font-size:36px;
+	}
+    
+	#urban{
+		font-size:36px;
+	}
+	
+	#program{
+		text-align:center;
+		width:100%;
+		height:40px;
+		padding:0;
+	}
+
+
+
+
+	/*contactme.php*/
+
+	input{
+		margin-bottom:30px;
+	}
+
+	textarea{
+		resize:none;
+		width:100%;
+		height:100px;
+	}
+
+	#about{
+		width:50%;
+	}
+
+	#about p{
+		font-size:18px;
+	}
+
+	#contact{
+		width:40%;
+		margin-left:10%;
+	}
+
+	/*Project Pages*/
+	figcaption{
+		margin-bottom:15px;
+	}
+
+	figure{
+		margin:0;
+		width:100%;
+		margin-bottom:100px;
+	}
+			
+	figure figure{
+		margin-bottom:15px;
+	}
+
+	figure img{
+		width:100%;
+		margin-bottom:15px;
+	}
+
+	.inline{
+		display:inline-block;
+		margin-left:0;
+		margin-right:0;
+	}
