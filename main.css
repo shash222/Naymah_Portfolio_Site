@@ -1,38 +1,33 @@
 	/*General styling*/
 	a:link{
 		text-decoration:none;
-		color:inherit;
-	}
-
-	a:visited{
-		color:inherit;
 	}
 
 	a:hover {/* mouse over link */
 		font-weight:bold;
 	}
 
-	a:active {/* selected link */
-		color: inherit;
-	}
-	
 	@keyframes titleTranslationOut{
 	    from{margin-left:0;}
-	    to{margin-left:208px;}
+	    to{margin-left:25%;}
+	    /* to{margin-left:208px;} */
 	}
 	
 	@keyframes descriptionTranslationOut{
 	    from{margin-left:0;}
-	    to{margin-left:208px;}
+	    to{margin-left:25%;}
+	    /* to{margin-left:208px;} */
 	}
 
 	@keyframes titleTranslationIn{
-	    from{margin-left:208px;}
+	    from{margin-left:25%;}
+	    /* from{margin-left:208px;} */
 	    to{margin-left:0;}
 	}
 	
 	@keyframes descriptionTranslationIn{
-	    from{margin-left:208px;}
+	    from{margin-left:25%;}
+	    /* from{margin-left:208px;} */
 	    to{margin-left:0;}
 	}
 
@@ -78,6 +73,7 @@
 
 	html{
 		overflow-y:scroll;
+		scroll-behavior: smooth;
 	}
 
 	header{
@@ -87,18 +83,32 @@
 		z-index:5;
 		box-shadow:0 6px 15px #d2d2d2;
 		margin:0;
-		height:30%;
+		/* height:20vh; */
+		height:25vh;
+		/* height:200px; */
 	}
-	
+
 	.navLinks{
 		width:24.8%;
 		float:left;
 		color:#E19771;
 	}
 
-	#container{
+	.navLinks>a {
+		color:inherit;
+	}
+	
+	.navLinks>a:visited{
+		color:inherit;
+	}
+
+	.navLinks>a:active {/* selected link */
+		color: inherit;
+	}
+	
+	#container{ 
 		position:absolute;
-		margin-top:15%;
+		margin-top:25vh;
 		width:60%;
 		margin-bottom:50px;
 		max-width:1200px;
@@ -120,6 +130,7 @@
 		right:20%;
 		width:40%;
 		top:15px;
+		margin-top:15px;
 		text-align:center;
 		z-index:3;
 	}
@@ -143,13 +154,14 @@
 
 	.slides{
 		width:100%;
-		height:100%;
+		height:50vh;
 	}
 
 	.slideshowTitles{
 		font-size:20px;
 		font-weight:bold;
 		margin-bottom:0;
+		text-decoration: underline;
 	}
 
 	#slideshow{
@@ -240,6 +252,11 @@
 
 	/*portfolio.html*/
 
+	.programTitle {
+		padding-top: 20%;
+		margin-top: -20%;
+	}
+
 	p{
 		font-weight:normal;
 	}
@@ -249,12 +266,17 @@
 		color:white;
 		height:286px;
 		width:25%;
+		/* padding-left: 1%; */
+		/* padding-right: 1%; */
 		font-size:17px;
 		text-align:center;
-		vertical-align:auto;
 		position:absolute;
 		transform:translateX(-100%);
 		z-index:1;
+	}
+
+	.description>p {
+		margin: 1%;
 	}
      
     .interiorDescription{
@@ -296,6 +318,7 @@
 
 	.title p{
 		margin:0;
+		text-shadow: 2px 2px 0px black;
 	}
 
 	.interior{
@@ -305,6 +328,7 @@
 	.commercial{
 		color:#aaad57;
 	}
+
 
 	.progLinks{
 		float:left;
@@ -332,10 +356,10 @@
 	#hideText{
 		position:absolute;
 		height:100%;
-		width:25%;
+		width:30%;
 		z-index:2;
 		background-color:white;
-		left:-25%;
+		left:-30%;
 	}
 
 	#residentialContainer{
@@ -353,6 +377,7 @@
 
 	#interior{
 		font-size:36px;
+		text-align: left;
 	}
 	
 	#commercial{
@@ -372,6 +397,7 @@
 		width:100%;
 		height:40px;
 		padding:0;
+		margin-bottom: 50px;
 	}
 
 

@@ -1,6 +1,7 @@
 <?php
 	$outcome="";
-	if (($_POST['submit'])!=null) {
+	// if (($_POST['submit'])!=null) {
+	if (isset($_POST['submit'])) {
 		$firstName=$_POST["firstName"];
 		$lastName=$_POST["lastName"];
 		$email=$_POST["email"];
@@ -37,7 +38,8 @@
 			<img id="image" src="Project Images\\Naymah.png">
 			<div id="name">
 				<h1 id="naymah">NAYMAH HASHMI</h1>
-				<h4 id="objective">I am an Architecture graduate from NJIT with a passion for interior design, architecture, and urban design and also excel in multiple architecture softwares.</h4>
+				<!-- Value is added in navigation\.js -->
+				<h5 id="objective"></h5>
 			</div>
 			<nav>
 				<li class="navLinks"><a href="index.html">HOME</a></li>
